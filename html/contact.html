@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/cb9a8cdf3e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../font/stylesheet.css" />
+    <title>Rick & Morty - SkillFactory</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="characters.html">Personajes</a></li>
+          <li><a href="users.html">Usuarios</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="form">
+        <form class="formulario" id="formulario">
+          <h1>¡Contactanos!</h1>
+          <label for="nombre">Nombre: </label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required />
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" placeholder="tuemail@mail.com" required />
+          <legend>Escribí acá tu mensaje:</legend>
+          <textarea name="mensaje" id="mensaje" cols="90" rows="10"></textarea>
+          <button type="submit" class="button" onclick="obtenerDatos()" >Enviar</button>
+        </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="foot">
+        <div class="links">
+          <a href="https://github.com/fmiguezo" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/florencia-miguez-oliverio/" target="_blank"
+            ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+          ></a>
+        </div>
+        <p>Florencia Miguez 2022 &copy; - SkillFactory React</p>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/form.js"></script>
+</html>

@@ -1,0 +1,247 @@
+* {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+html,
+body {
+    background: #232137;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* ----- Header & Nav ----- */
+
+header {
+    margin: -10px;
+}
+
+nav {
+    height: 10em;
+    margin-bottom: 10px;
+    background: linear-gradient(black, #232137);
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: aquamarine;
+    display: block;
+    transition: 500ms;
+    font-family: 'get_schwiftyregular';
+}
+
+nav a:hover {
+    font-weight: bolder;
+    font-size: 3rem;
+    text-shadow: 0 0 5px greenyellow;
+}
+
+/* Form */
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    padding: 2rem;
+    width: 60%;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    color: aquamarine;
+    font-size: 2rem;
+    text-shadow: 0 0 3px greenyellow;
+}
+
+
+form label,
+legend {
+    font-size: 1.2rem;
+    color: white
+}
+
+form textarea {
+    width: 96%;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+form input {
+    color: black;
+    width: 100%;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+form input:hover,
+form textarea:hover {
+    border: solid greenyellow;
+}
+
+.button {
+    font-size: 1.5rem;
+    border: 0.1rem solid greenyellow;
+    background-color: #eeeeee;
+    color: black;
+    width: 100%;
+    transition: 0.5s;
+    border-radius: 0.2rem;
+}
+
+.button:hover {
+    background-color: greenyellow;
+    box-shadow: 0 0 5px aquamarine;
+}
+
+/* ----- Tabla usuarios ----- */
+
+.main-usuarios {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tabla-usuarios {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    min-width: 400px;
+    box-shadow: 0 0 5px aquamarine;
+}
+
+.tabla-usuarios thead tr {
+    background-color: aquamarine;
+    color: black;
+    text-align: left;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+    padding: 12px 15px;
+}
+
+.tabla-usuarios tbody tr:hover {
+    color: greenyellow;
+    text-shadow: 0 0 5px aquamarine;
+}
+
+.tabla-usuarios tbody tr {
+    border-bottom: 1px solid aquamarine;
+    background-color: #222831;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* ----- Cards ----- */
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.card {
+    background-color: #222831;
+    height: 16rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 8px aquamarine;
+    color: white;
+    font-weight: bold;
+}
+
+.card-name {
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.card-image {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    border: 5px solid #232137;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.card-image:hover {
+    box-shadow: 0 10px 50px greenyellow;
+}
+
+
+/* ----- Footer ----- */
+
+footer {
+    height: inherit;
+    background: linear-gradient(#232137, black);
+    color: aquamarine;
+    margin: -10px;
+    /* margin-top: auto; */
+    order: 2;
+    /* align-items: flex-end; */
+}
+
+.foot {
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.foot i {
+    color: aquamarine;
+    font-size: 2.5rem;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.foot i:hover {
+    color: greenyellow;
+    text-shadow: 0 0 3px aquamarine;
+}
+
+.links {
+    width: 50%;
+    text-align: left;
+    display: inline-block;
+}
+
+footer p {
+    display: inline;
+    font-size: 1rem;
+    color: white;
+
+}
