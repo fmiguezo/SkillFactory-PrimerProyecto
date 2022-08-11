@@ -8,8 +8,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
 }
 
@@ -49,6 +47,13 @@ nav a:hover {
     font-weight: bolder;
     font-size: 3rem;
     text-shadow: 0 0 5px greenyellow;
+}
+
+/* Home */
+
+#gif-home {
+    display: flex;
+    justify-content: center;
 }
 
 /* Form */
@@ -122,15 +127,15 @@ form textarea:hover {
 
 .main-usuarios {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .tabla-usuarios {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 50px 0;
     font-size: 1em;
-    min-width: 400px;
+    width: 80%;
     box-shadow: 0 0 5px aquamarine;
 }
 
@@ -165,8 +170,8 @@ form textarea:hover {
     grid-gap: 50px;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: 'Baloo Paaji 2', cursive;
+    height: 120%;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -199,7 +204,6 @@ form textarea:hover {
     box-shadow: 0 10px 50px greenyellow;
 }
 
-
 /* ----- Footer ----- */
 
 footer {
@@ -207,9 +211,12 @@ footer {
     background: linear-gradient(#232137, black);
     color: aquamarine;
     margin: -10px;
-    /* margin-top: auto; */
     order: 2;
-    /* align-items: flex-end; */
+    width: auto;
+}
+
+#footer-users {
+    width: 101%
 }
 
 .foot {
@@ -244,4 +251,84 @@ footer p {
     font-size: 1rem;
     color: white;
 
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    /* ----- Header & Nav ----- */
+
+    header {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    nav li {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .container {
+        display: block;
+        align-items: center;
+        margin: 0 1.2em;
+    }
+
+    .card {
+        margin-bottom: 2em;
+    }
+
+    /* ----- Form ----- */
+
+    form {
+        width: 80%;
+    }
+
+    form textarea {
+        width: 86%;
+    }
+
+    .button {
+        width: 102%;
+    }
+
+    /* ----- Tabla usuarios ----- */
+
+    thead {
+        display: none;
+    }
+
+    tr td:first-child {
+        background-color: aquamarine;
+        color: black;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+
+    #gif-home {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        width: auto;
+    }
 }
