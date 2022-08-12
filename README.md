@@ -18,4 +18,4 @@ Objetivo de esta tarea: Trabajar con asincronismo, implementar Fetch o Axios par
 :white_check_mark: API Rick & Morty: Realizar una petición a la API Rest de Rick & Morty, en su formato Rest. El endpoint a utilizar se encuentra aquí. Obtener el resultado de la petición asíncrona y renderizar el DOM a partir de un archivo JS en el que se muestren los personajes de la serie a través de unas cards de presentación. Como la API se encuentra paginada, es suficiente con renderizar los 20 primeros personajes. Pueden renderizar más si así lo desean
 Objetivo de esta tarea: Trabajar con asincronismo, implementar Fetch o Axios para la petición, implementar .then o async/await para el manejo de las promesas. Control de DOM por medio de JS, implementación de cards en una UI.
 
-## <a href="https://skillfactory-challenge1.netlify.app/>Ver sitio</a>
+## <a href="https://skillfactory-challenge1.netlify.app">Ver sitio</a>
