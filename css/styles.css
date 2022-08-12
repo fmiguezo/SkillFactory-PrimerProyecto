@@ -67,7 +67,10 @@ form {
     padding: 2rem;
     width: 60%;
     margin-bottom: 3rem;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 h1 {
@@ -79,13 +82,14 @@ h1 {
 
 
 form label,
-legend {
+legend,
+#print-results p {
     font-size: 1.2rem;
     color: white
 }
 
 form textarea {
-    width: 96%;
+    width: 94%;
     padding: 1.5rem;
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -116,11 +120,24 @@ form textarea:hover {
     width: 100%;
     transition: 0.5s;
     border-radius: 0.2rem;
+    height: 2em;
 }
 
 .button:hover {
     background-color: greenyellow;
     box-shadow: 0 0 5px aquamarine;
+}
+
+#print-results h3 {
+    text-align: center;
+    color: aquamarine;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px greenyellow;
+}
+
+#print-results p {
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 /* ----- Tabla usuarios ----- */
@@ -300,9 +317,6 @@ footer p {
         width: 86%;
     }
 
-    .button {
-        width: 102%;
-    }
 
     /* ----- Tabla usuarios ----- */
 
